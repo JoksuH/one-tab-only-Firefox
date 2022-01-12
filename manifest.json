@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "One Tab Only",
+  "version": "1.0",
+
+  "description": "Blocks the ability to open more than one tab.",
+  
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/block_icon.png",
+      "32": "icons/block_icon.png"
+    }
+  },
+
+  "permissions": ["<all_urls>", "tabs"],
+  "background": {
+    "scripts": ["onetabonly.js"]
+  }
+}
