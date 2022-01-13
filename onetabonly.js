@@ -5,7 +5,7 @@ const getCurrentWindowTabs = () => {
 const checkMultipleTabs = () => {
   getCurrentWindowTabs().then((tabsArr) => {
     tabsArr.forEach((tab) => {
-      if (tab.id !== 1) browser.tabs.remove(tab.id)
+      if (tab.id !== tabsArr[0].id) browser.tabs.remove(tab.id)
     })
   })
 }
